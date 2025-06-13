@@ -2,12 +2,15 @@
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
-    --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
-      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --default-font-family: var(--font-sans);
+    --spacing: 0.25rem;
     --default-mono-font-family: var(--font-mono);
+    --color-brand: var(--color-brand);
+    --color-dark-10: var(--color-dark-10);
+    --color-dark-20: var(--color-dark-20);
+    --color-dark-30: var(--color-dark-30);
+    --font-inter: var(--font-inter);
   }
 }
 @layer base {
@@ -21,7 +24,7 @@
     line-height: 1.5;
     -webkit-text-size-adjust: 100%;
     tab-size: 4;
-    font-family: var(--default-font-family, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+    font-family: var(--font-inter, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
     font-feature-settings: var(--default-font-feature-settings, normal);
     font-variation-settings: var(--default-font-variation-settings, normal);
     -webkit-tap-highlight-color: transparent;
@@ -155,4 +158,130 @@
     display: none !important;
   }
 }
-@layer utilities;
+@layer utilities {
+  .\@container\/hero {
+    container-type: inline-size;
+    container-name: hero;
+  }
+  .absolute {
+    position: absolute;
+  }
+  .relative {
+    position: relative;
+  }
+  .top-0 {
+    top: calc(var(--spacing) * 0);
+  }
+  .left-0 {
+    left: calc(var(--spacing) * 0);
+  }
+  .z-0 {
+    z-index: 0;
+  }
+  .z-100 {
+    z-index: 100;
+  }
+  .mx-auto {
+    margin-inline: auto;
+  }
+  .flex {
+    display: flex;
+  }
+  .size-full {
+    width: 100%;
+    height: 100%;
+  }
+  .h-\[143px\] {
+    height: 143px;
+  }
+  .max-h-150 {
+    max-height: calc(var(--spacing) * 150);
+  }
+  .min-h-lvh {
+    min-height: 100lvh;
+  }
+  .w-\[216px\] {
+    width: 216px;
+  }
+  .w-full {
+    width: 100%;
+  }
+  .max-w-lvw {
+    max-width: 100lvw;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .object-cover {
+    object-fit: cover;
+  }
+  .object-center {
+    object-position: center;
+  }
+  .font-inter {
+    font-family: var(--font-inter);
+  }
+  .antialiased {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .sm\:h-\[199px\] {
+    @media (width >= 40rem) {
+      height: 199px;
+    }
+  }
+  .sm\:w-\[300px\] {
+    @media (width >= 40rem) {
+      width: 300px;
+    }
+  }
+  .md\:h-\[394px\] {
+    @media (width >= 48rem) {
+      height: 394px;
+    }
+  }
+  .md\:w-\[596px\] {
+    @media (width >= 48rem) {
+      width: 596px;
+    }
+  }
+  .\33 xl\:container {
+    @media (width >= 120rem) {
+      width: 100%;
+      @media (width >= 40rem) {
+        max-width: 40rem;
+      }
+      @media (width >= 48rem) {
+        max-width: 48rem;
+      }
+      @media (width >= 64rem) {
+        max-width: 64rem;
+      }
+      @media (width >= 80rem) {
+        max-width: 80rem;
+      }
+      @media (width >= 96rem) {
+        max-width: 96rem;
+      }
+      @media (width >= 120rem) {
+        max-width: 120rem;
+      }
+    }
+  }
+}
+:root {
+  --color-brand: #1d4ed8;
+  --color-dark-10: #2E2E2E;
+  --color-dark-20: #FEFBF4;
+  --color-dark-30: #FFFFFF;
+  --font-inter: 'Inter', sans-serif;
+}
+.background-hero {
+  background: url('../../public/image.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
