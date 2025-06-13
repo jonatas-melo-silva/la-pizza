@@ -9,16 +9,108 @@
   <title>La Pizza</title>
 </head>
 
-<body class="min-h-lvh max-w-lvw font-inter antialiased">
-  <section class="@container/hero w-full max-h-150 3xl:container mx-auto relative flex items-center justify-center">
-    <div class="size-full">
-      <img class="object-cover object-center z-0" src="./src/assets/image-bg-hero.png" alt="">
-      <div class="absolute top-0 left-0 size-full z-100 flex items-center justify-center">
-        <img class="w-[216px] h-[143px] sm:w-[300px] sm:h-[199px] md:w-[596px] md:h-[394px]" src="./src/assets/logo.svg"
-          alt="La Pizza Logo">
-      </div>
+<body class="min-h-lvh max-w-lvw font-inter antialiased text-black">
+  <section
+    class="background-hero @container/hero w-full h-75 sm:h-100 lg:h-150 3xl:container mx-auto flex items-center justify-center">
+    <div class="size-full flex items-center justify-center bg-gradient-to-b from-black/0 to-black/50">
+      <img class="w-[216px] h-[143px] sm:w-[300px] sm:h-[199px] lg:w-[596px] lg:h-[394px]" src="./src/assets/logo.svg"
+        alt="La Pizza Logo">
     </div>
   </section>
+
+  <main class="@container/main w-full 3xl:container mx-auto flex items-center justify-center">
+    <section
+      class="background-more-sales @container/more-sales w-full max-w-[1237px] flex flex-col items-center justify-center px-6 py-12 gap-25 sm:py-16 lg:py-[144px]">
+      <h1 class="text-black text-[40px] font-semibold">Mais vendidas</h1>
+
+      <div
+        class="@container/pizza-list w-full flex flex-col items-center justify-center gap-24 sm:gap-20 lg:gap-10 sm:grid sm:grid-cols-2 lg:grid-cols-4">
+        <div
+          class="@container/pizza-item w-full h-90 bg-shape/80 px-8 rounded-2xl border-2 border-border flex flex-col items-center justify-center relative hover:ring-1 hover:ring-border/40 hover:-translate-y-2 transition duration-300 ease-in-out">
+          <!-- <div class="@container/pizza-card"> -->
+          <div class="@container/pizza-info w-full flex flex-col items-center justify-center gap-4">
+            <img class="absolute -top-12 size-30" src="./src/assets/pizza-1.png" alt="Pizza La Toca">
+            <img class="absolute -top-4 right-10 lg:right-5 size-8" src="./src/assets/icon-favorite.svg"
+              alt="Ícone de favorito">
+
+            <h2 class="text-xl font-semibold text-center">La Toca</h2>
+            <p class="text-center leading-normal">Deliciosa pizza de pepperoni com borda recheada de catupiry
+            </p>
+
+            <span class="text-[32px] font-semibold text-center">R$ 49,90</span>
+          </div>
+
+          <button
+            class="absolute -bottom-4 flex uppercase px-10 py-3 bg-brand rounded-3xl text-sm font-semibold hover:brightness-90 transition duration-300 ease-in-out">comprar
+            agora</button>
+          <!-- </div> -->
+        </div>
+
+        <div
+          class="@container/pizza-item w-full h-90 bg-shape/80 px-8 rounded-2xl border-2 border-border flex flex-col items-center justify-center relative hover:ring-1 hover:ring-border/40 hover:-translate-y-2 transition duration-300 ease-in-out">
+          <!-- <div class="@container/pizza-card"> -->
+          <div class="@container/pizza-info w-full flex flex-col items-center justify-center gap-4">
+            <img class="absolute -top-12 size-30" src="./src/assets/pizza-1.png" alt="Pizza La Toca">
+            <img class="absolute -top-4 right-10 lg:right-5 size-8" src="./src/assets/icon-favorite.svg"
+              alt="Ícone de favorito">
+
+            <h2 class="text-xl font-semibold text-center">La Toca</h2>
+            <p class="text-center leading-normal">Deliciosa pizza de pepperoni com borda recheada de catupiry
+            </p>
+
+            <span class="text-[32px] font-semibold text-center">R$ 49,90</span>
+          </div>
+
+          <button
+            class="absolute -bottom-4 flex uppercase px-10 py-3 bg-brand rounded-3xl text-sm font-semibold hover:brightness-90 transition duration-300 ease-in-out">comprar
+            agora</button>
+          <!-- </div> -->
+        </div>
+
+        <div
+          class="@container/pizza-item w-full h-90 bg-shape/80 px-8 rounded-2xl border-2 border-border flex flex-col items-center justify-center relative hover:ring-1 hover:ring-border/40 hover:-translate-y-2 transition duration-300 ease-in-out">
+          <!-- <div class="@container/pizza-card"> -->
+          <div class="@container/pizza-info w-full flex flex-col items-center justify-center gap-4">
+            <img class="absolute -top-12 size-30" src="./src/assets/pizza-1.png" alt="Pizza La Toca">
+            <img class="absolute -top-4 right-10 lg:right-5 size-8" src="./src/assets/icon-favorite.svg"
+              alt="Ícone de favorito">
+
+            <h2 class="text-xl font-semibold text-center">La Toca</h2>
+            <p class="text-center leading-normal">Deliciosa pizza de pepperoni com borda recheada de catupiry
+            </p>
+
+            <span class="text-[32px] font-semibold text-center">R$ 49,90</span>
+          </div>
+
+          <button
+            class="absolute -bottom-4 flex uppercase px-10 py-3 bg-brand rounded-3xl text-sm font-semibold hover:brightness-90 transition duration-300 ease-in-out">comprar
+            agora</button>
+          <!-- </div> -->
+        </div>
+
+        <div
+          class="@container/pizza-item w-full h-90 bg-shape/80 px-8 rounded-2xl border-2 border-border flex flex-col items-center justify-center relative hover:ring-1 hover:ring-border/40 hover:-translate-y-2 transition duration-300 ease-in-out">
+          <!-- <div class="@container/pizza-card"> -->
+          <div class="@container/pizza-info w-full flex flex-col items-center justify-center gap-4">
+            <img class="absolute -top-12 size-30" src="./src/assets/pizza-1.png" alt="Pizza La Toca">
+            <img class="absolute -top-4 right-10 lg:right-5 size-8" src="./src/assets/icon-favorite.svg"
+              alt="Ícone de favorito">
+
+            <h2 class="text-xl font-semibold text-center">La Toca</h2>
+            <p class="text-center leading-normal">Deliciosa pizza de pepperoni com borda recheada de catupiry
+            </p>
+
+            <span class="text-[32px] font-semibold text-center">R$ 49,90</span>
+          </div>
+
+          <button
+            class="absolute -bottom-4 flex uppercase px-10 py-3 bg-brand rounded-3xl text-sm font-semibold hover:brightness-90 transition duration-300 ease-in-out">comprar
+            agora</button>
+          <!-- </div> -->
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>

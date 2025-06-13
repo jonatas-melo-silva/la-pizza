@@ -1,10 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  --color-brand: #1d4ed8; /* Example brand color */
+  --color-brand: #FFBD48;
+
+  --color-border: #FFF5DE;
+  --color-shape: #FEFBF4;
 
   --color-dark-10: #2E2E2E;
-  --color-dark-20: #FEFBF4;
   --color-dark-30: #FFFFFF;
 
   --font-inter: 'Inter', sans-serif;
@@ -12,8 +14,10 @@
 
 @theme inline {
   --color-brand: var(--color-brand);
+  --color-border: var(--color-border);
+  --color-shape: var(--color-shape);
+  
   --color-dark-10: var(--color-dark-10);
-  --color-dark-20: var(--color-dark-20);
   --color-dark-30: var(--color-dark-30);
 
   --font-inter: var(--font-inter);
@@ -31,8 +35,15 @@
 }
 
 .background-hero {
-  background: url('../../public/image.webp');
+  background: url('../assets/image-bg-hero.png');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+}
+
+.background-more-sales {
+  background: url('../assets/image-bg-more-sale.png');
+  background-size: cover;
+  background-position: top;
   background-repeat: no-repeat;
 }
