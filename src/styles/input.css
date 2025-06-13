@@ -16,7 +16,7 @@
   --color-brand: var(--color-brand);
   --color-border: var(--color-border);
   --color-shape: var(--color-shape);
-  
+
   --color-dark-10: var(--color-dark-10);
   --color-dark-30: var(--color-dark-30);
 
@@ -35,7 +35,7 @@
 }
 
 .background-hero {
-  background: url('../assets/image-bg-hero.png');
+  background: url('../assets/image-bg-hero.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
